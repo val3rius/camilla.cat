@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style type="text/css">
+        img {
+            max-width: 100%;
+        }
+        </style>
+        <script type="text/javascript">
+            // Set the date we're counting down to
+            var countDownDate = new Date("April 22, 2021 20:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("time").innerHTML = days + " dagar och " + hours + " timmar";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time").innerHTML = "";
+            }
+            }, 1000);
+        
+        window.onload = function () {
+            var onehour = 60 * 600 * 1.231,
+                display = document.querySelector('#time');
+            startTimer(onehour, display);
+        };</script>
+    </head>
+    <body background="space.gif">
+        <div style="margin: 70px auto; width: 1024px; color: #fff; text-align: center">
+
+            <marquee><h1>Välkommen till Camillas homepage på Internet</h1></marquee>
+
+            <p>Hej och välkommen till mitt krypin på world wide web. Jag heter Camilla och jag gillar hästar, sol och värme, min familj, å en massa annat. Här har jag samlat några saker jag gillar. </p>
+
+            <p style="color:lime;font-size:30px"><strong><span id=time>... dagar och ... timmar</span> kvar till BRYAN ADAMS!!!!!! I Stockholm!!            </strong></p>
+
+
+            <div style="border: 4px solid"><p style="color:mediumpurple; font-size:20px"><strong>Mina favvoskämt och me-mes</strong></p>
+            
+                <h2>KLOCKREN</h2>
+                <iframe width="100%" height="500px" src="https://klockren.nu"></iframe>
+
+                <h2 style="margin-top:40px">JAG LACKAR UUUUUR</h2>
+                <img src="lackarur.jpg">
+
+            </div>
+
+            <img style="margin: 50px auto;" src="colors.gif"><br>
+            <img src="baby.webp">
+
+            <div style="border: 4px solid; margin-top: 40px;"><p style="color:mediumpurple; font-size:20px"><strong>Bilder på hästar</strong></p>
+
+                <h2 style="margin-top:40px">Dubbelhäst</h2>
+                <img src="hest1.jpg">
+
+                <h2 style="margin-top:40px">Tittut!</h2>
+                <img src="hest2.jpg">
+
+                <h2 style="margin-top:40px">Hästfamilj</h2>
+                <img src="hest3.jpg">
+
+
+                <h2 style="margin-top:40px">Sherlock Hästholmes</h2>
+                <img src="hest4.jpg">
+
+                <h2 style="margin-top:40px">Mathmatics</h2>
+                <img src="hest5.jpg">
+
+            </div>
+
+            <h2>Slut på hemsida :)) Hejdå</h2>
+
+        </div>
+    </body>
+</html>
